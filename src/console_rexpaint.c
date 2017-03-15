@@ -48,15 +48,15 @@
 #endif
 
 struct RexPaintHeader {
-	int version;
-	int layer_count;
+	int32_t version;
+	int32_t layer_count;
 };
 struct RexPaintLayerChunk {
-	int width;
-	int height;
+	int32_t width;
+	int32_t height;
 };
 struct RexPaintTile {
-	int ch;
+	int32_t ch;
 	TCOD_color_t fg;
 	TCOD_color_t bg;
 };
